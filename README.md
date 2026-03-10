@@ -1,1 +1,1 @@
-# Open-Source-Modeling
+# Lecture Spring 2026
