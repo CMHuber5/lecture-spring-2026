@@ -17,7 +17,12 @@ def format_time_display(seconds):
 
 # Fortschrittsbalken-Funktion
 def progress_bar(total, remaining, length=30):
-    progress = (total - remaining) / total
+    if total <= 0:
+        progress = 1
+    else:
+        progress = (total - remaining) / total
+        
+    progress = max(0, min(1, progress))
     filled = int(length * progress)
     bar = "█" * filled + "-" * (length - filled)
     percent = int(progress * 100)
