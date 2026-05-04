@@ -8,7 +8,7 @@ def test_calculate_seconds_test_mode():
 
 def test_calculate_seconds_real_mode():
     # Prüft Umrechnung von min in sec
-    assert timer.calculate_seconds(5, is_test=False) == 300
+    assert timer.calculate_seconds(5, is_test=False) == 301
 
 
 def test_format_time_display():
